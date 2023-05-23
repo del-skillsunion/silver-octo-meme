@@ -54,7 +54,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: sctp-cloud-infra
+        ECR_REPOSITORY: silver-octo-meme
         IMAGE_TAG: latest
       run: |
         # Build a docker container and
@@ -69,13 +69,13 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: ecs-task-definition.json
-        container-name: sctp-cloud-infra
+        container-name: silver-octo-meme
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: sctp-cloud-infra-ecs-service
-        cluster: sctp-cloud-infra-cluster
+        service: silver-octo-meme-ecs-service
+        cluster: silver-octo-meme-cluster
         wait-for-service-stability: true

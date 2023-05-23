@@ -1,11 +1,11 @@
 {
-    "family": "sctp-cloud-infra",
+    "family": "silver-octo-meme",
     "executionRoleArn": "arn:aws:iam::255945442255:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
-            "name": "sctp-cloud-infra",
-            "image": "255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/sctp-cloud-infra:latest",
+            "name": "silver-octo-meme",
+            "image": "255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/silver-octo-meme:latest",
             "portMappings": [
                 {
                     "containerPort": 3000,
