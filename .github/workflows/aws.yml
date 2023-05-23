@@ -52,3 +52,4 @@ jobs:
       - name: Update ECS service
         run: |
           aws ecs update-service --cluster silver-octo-meme-cluster --service silver-octo-meme --task-definition silver-octo-meme-task --force-new-deployment
+          
