@@ -3,7 +3,7 @@ name: Deploy to production
 on:
   push:
     branches:
-      - master
+      - main
  
 jobs:
   create-docker-image:
@@ -52,4 +52,3 @@ jobs:
       - name: Update ECS service
         run: |
           aws ecs update-service --cluster silver-octo-meme-cluster --service silver-octo-meme --task-definition silver-octo-meme-task --force-new-deployment
-          
