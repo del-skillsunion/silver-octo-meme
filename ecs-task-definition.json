@@ -5,7 +5,7 @@
     "containerDefinitions": [
         {
             "name": "silver-octo-meme",
-            "image": "255945442255.dkr.ecr.ap-southeast-1.amazonaws.com/silver-octo-meme:latest",
+            "image": "255945442255.dkr.ecr.us-east-1.amazonaws.com/silver-octo-meme:latest",
             "portMappings": [
                 {
                     "containerPort": 3000,
